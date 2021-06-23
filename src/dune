@@ -1,0 +1,12 @@
+(rule
+ (targets cordova_firebase.ml)
+ (deps cordova_firebase.mli)
+ (action (run %{bin:gen_js_api} %{deps})))
+
+(library
+ (public_name cordova-plugin-firebase)
+ (name cordova_firebase)
+ (modes byte)
+ (libraries gen_js_api)
+  ; (preprocess (pps gen_js_api))
+)
