@@ -4,7 +4,14 @@ Binding to [cordova-plugin-firebase](https://github.com/arnesson/cordova-plugin-
 
 ## What does ocaml-cordova-plugin-firbase do ?
 
-[TODO]
+This plugin provides functions that give the opportunity to use the
+"firebase" cordova plugin in your ocaml projects.
+
+> This plugin brings push notifications, analytics, event tracking,
+  crash reporting and more from Google Firebase to your Cordova project!
+  Android and iOS supported.
+
+Source: [cordova-plugin-firebase](https://github.com/arnesson/cordova-plugin-firebase)
 
 ## How to install and compile your project by using this plugin ?
 
