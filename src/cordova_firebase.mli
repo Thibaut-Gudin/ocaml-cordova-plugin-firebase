@@ -21,7 +21,7 @@ end]
 
 [@@@ocamlformat "disable=true"]
 
-val logEvent : event:string ->
+val log_event : event:string ->
                ?params:(Properties.t [@js.default Properties.create []]) ->
                unit ->
                unit
@@ -29,10 +29,10 @@ val logEvent : event:string ->
 
 [@@@ocamlformat "disable=false"]
 
-val setEnabled : bool -> unit
+val set_enabled : bool -> unit
   [@@js.global "cordova.plugins.firebase.analytics.setEnabled"]
 
-val getAppInstanceId : unit -> string
+val get_app_instance_id : unit -> string
   [@@js.global "cordova.plugins.firebase.analytics.getAppInstanceId"]
 
 [@@@js.stop]
