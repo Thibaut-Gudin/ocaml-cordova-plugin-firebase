@@ -32,14 +32,11 @@ val log_event : event:string ->
 val set_enabled : bool -> unit
   [@@js.global "cordova.plugins.firebase.analytics.setEnabled"]
 
-val get_app_instance_id : unit -> string
-  [@@js.global "cordova.plugins.firebase.analytics.getAppInstanceId"]
-
 [@@@js.stop]
 
 val available : unit -> bool
 
-val access_analytics : unit -> bool
+val analytics_available : unit -> bool
 
 [@@@js.start]
 
@@ -49,6 +46,6 @@ let available () =
     Js_of_ocaml.Js.Unsafe.global##.cordova##.plugins##.firebase]
 
 [@@@js.implem
-let access_analytics () =
+let analytics_available () =
   Js_of_ocaml.Js.Optdef.test
     Js_of_ocaml.Js.Unsafe.global##.cordova##.plugins##.firebase##.analytics]
