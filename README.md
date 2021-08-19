@@ -1,6 +1,9 @@
 # ocaml-cordova-plugin-firebase
 
-Binding to [cordova-plugin-firebase](https://github.com/arnesson/cordova-plugin-firebase)
+Binding to
+[cordova-plugin-firebase](https://github.com/arnesson/cordova-plugin-firebase),
+and more specifically
+[cordova-plugin-firebase-analytics](https://github.com/chemerisuk/cordova-plugin-firebase-analytics)
 
 ## What does ocaml-cordova-plugin-firbase do ?
 
