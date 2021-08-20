@@ -1,6 +1,9 @@
 # ocaml-cordova-plugin-firebase
 
-Binding to [cordova-plugin-firebase](https://github.com/arnesson/cordova-plugin-firebase)
+Binding to
+[cordova-plugin-firebase](https://github.com/arnesson/cordova-plugin-firebase),
+and more specifically
+[cordova-plugin-firebase-analytics](https://github.com/chemerisuk/cordova-plugin-firebase-analytics)
 
 ## What does ocaml-cordova-plugin-firbase do ?
 
@@ -33,12 +36,15 @@ cordova plugin add cordova-plugin-firebase
 
 ## How to use it?
 
-### Cordova_firebase.available
+See: [firebase-analytics functions
+API](https://rnfirebase.io/reference/analytics)
+
+### Cordova_firebase.firebase_available
 You can use this function to know if the object "Cordova_firebase" is
 available in your project, it is recommended to use it before to call
 other functions from this plugin.
 
-### Cordova_firebase.acess_analytics
+### Cordova_firebase.analytics_available
 You can use this function to know if the "Analytics" of firebug is
 available, it is recommended to use it before to call functions of this
 plugin that depends on "cordova-plugin-firebase.analytics".
@@ -62,10 +68,13 @@ Source : [cordova-plugin-firebase API](https://github.com/arnesson/cordova-plugi
 
 This function can take an optional argument "params" of type "Properties.t"
 
-See :[firebase analytics functions API](https://rnfirebase.io/reference/analytics#logEvent) for more details
+See :[firebase analytics functions
+documentation](https://github.com/chemerisuk/cordova-plugin-firebase-analytics#methods)
+for more details
 
 ### Cordova_firebase.setAnalyticsCollectionEnabled
 
 > Enable/disable analytics collection
 
-Source : [cordova-plugin-firebase API](https://github.com/arnesson/cordova-plugin-firebase/blob/master/docs/API.md)
+Source : [cordova-plugin-firebase-analytics
+API](https://rnfirebase.io/reference/analytics#setAnalyticsCollectionEnabled)
